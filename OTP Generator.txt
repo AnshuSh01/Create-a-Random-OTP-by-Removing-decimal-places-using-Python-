@@ -1,0 +1,18 @@
+import random
+import math
+
+def OTP():
+    no=random.random()*10000
+    s=math.trunc(no)
+    return s
+
+if __name__ == '__main__':
+    save=OTP()
+    print("Check Your Email and Your OTP is -",save)
+    user_number=int(input("Enter the OTP to acces the authority:\t"))
+    
+    if(user_number==save):
+        print("Your OTP is accepted Succesfully , now you are Eligible\n")
+    else:
+        print("Your OTP does not matched\n")
+ 
